@@ -1,0 +1,54 @@
+
+                               EXPENSE TRACKER SPLITTER
+
+
+ SCREENS:
+   SPLASHSCREEN                      
+	|                            
+   LOGINSCREEN                         
+	|                              
+   SIGNUPSCREE                          
+	|                              
+   GROUPLISTSCREEN                                       
+	|
+   CREATEGROUPSCREEN
+	|                             
+   EXPENSELISTSCREEN                     
+	|                               
+   ADDEXPENSESCREEN                      
+	|                                                     
+   BALANCESCREEN                         
+                                        
+
+API:
+1->table:users 
+id
+name
+email
+password
+createdAt
+   
+2->table:groups 
+id
+name
+createdBy
+createdAt    
+
+3->table:groupmembers
+id
+groupid
+userid
+
+4->table:expenses 
+id
+groupid
+paidBy
+amount
+descreption(optional)
+createdAt
+             
+5->table:splits
+id
+expenceid
+userid
+amount
